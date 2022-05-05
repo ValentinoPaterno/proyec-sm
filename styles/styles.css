@@ -1,0 +1,50 @@
+*{
+    padding: 0;  
+    margin: 0;
+}
+
+/* Mobile first */
+body{
+    background-color: aliceblue;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    font-size: large;
+    display: grid;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.sectionsText{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+.logoContainer{
+    height: 200px;
+    width: 200px;
+}
+.logo{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.introduction, .salesProposal, .location{
+    border: solid black 2px;
+    margin: 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+
+
+
