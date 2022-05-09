@@ -9,59 +9,73 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/979173d597.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <header>
-        <section>
-            <nav> 
-                <div class="logoContainer">
-                    <img class="logo" src="./img/sm cosmeticos (2).png" alt="">
-                </div>
-                <ul class="sectionsText">
-                    <li><a class="sectionsText" target="_blank" href="index.html">Inicio</a></li>
-                    <li><a class="sectionsText" target="_blank" href="secciones/productos.html">Productos</a></li>
-                    <li><a class="sectionsText" target="_blank" href="secciones/promociones.html">Promociones</a></li>
-                    <li><a class="sectionsText" target="_blank" href="secciones/acerca.html">Acerca</a></li>
-                    <li><a class="sectionsText" target="_blank" href="secciones/contacto.html">Contacto</a></li>
+    <section class="wrapper">
+        <header class="navbar">
+            <h1 class="mainLogo">SM</h1>
+            <nav class="nav"> 
+                <ul class="navResponsive">
+                    <div class="navLiContainer">
+                        <li><i class="fa-solid fa-house"></i><a class="sections" target="_blank" href="index.html">Inicio</a></li>
+                        <li><i class="fa-solid fa-cart-shopping"></i><a class="sections" target="_blank" href="secciones/productos.html">Productos</a></li>
+                        <li><i class="fa-solid fa-tag"></i><a class="sections" target="_blank" href="secciones/promociones.html">Promociones</a></li>
+                        <li><i class="fa-solid fa-circle-info"></i><a class="sections" target="_blank" href="secciones/acerca.html">Acerca</a></li>
+                        <li><i class="fa-solid fa-address-book"></i><a class="sections" target="_blank" href="secciones/contacto.html">Contacto</a></li>
+                    </div>
                 </ul>
             </nav>
-        </section>
-    </header>
-    
-    <main>
-        <section>
-            <div class="introduction">
-                <h1>Sm Cosmeticos</h1>
-                <p>En esta pequeña empresa nos encargamos de satisfacer tus necesidades de belleza. Contamos con productos para todo tipo de persona ya que deseamos siempre contar con lo que busques.</p>
-            </div>
-        </section>
+        </header>
         
-        <section>
-            <div class="salesProposal">
-                <h2>¿Queres ser consultora de belleza de Mary Kay? Unite a mi equipo!</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/zx4BxS7r0JQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
+        <main class="main">
+            <section class="introductionSection">
+                <div class="introduction">
+                    <h1 class="mainHeading">Sm Cosmeticos</h1>
+                    <p class="slogan">Tenemos la solución estética para lo que buscas.</p>
+                </div>
+            </section>
+            <section class="ourBrandsSection">
+                <div class="ourBrands">
+                    <h2>Marcas con las que trabajamos:</h2>
+                </div>
+                <div class="imgs">
+                    <img class="brand" src="./img/marykaylogopng.png" alt="">
+                    <img class="brand" src="./img/naturaimg.png" alt="">
+                    <img class="brand" src="./img/loreallogopng.png" alt="">
+                    <img class="brand" src="./img/cher.jpg" alt="">
+                </div>
+            </section>
+            <section class="someProductsSection">
+                <div class="someProducts">
+                    <h3>Algunos de nuestros productos en Sm</h3>
+                </div>
+                <div class="productsImages">
+                    <img class="products" src="./img/perfumeAuthenticHero.jpeg" alt="">
+                    <img class="products" src="./img/perfumeUpscaleBlack.jpeg" alt="">
+                    <img class="products" src="./img/perfumeUpscaleMk.jpeg" alt="">
+                    <img class="products" width="576" height="1280" src="./img/perfumesDiamonds.jpeg" alt="">
+                </div>
+            </section>
+            <section class="locationSection">
+                <div class="location">
+                    <h2>Podrás encontrarnos en la siguiente dirección!</h2>
+                </div>
+                <div class="mapContainer">    
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.973208869203!2d-58.84971948431231!3d-27.470093423297932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456cb9480e4d31%3A0x3df8fe15b59af2df!2sBol%C3%ADvar%20274%2C%20W3400AME%20W3400AME%2C%20Corrientes!5e0!3m2!1ses-419!2sar!4v1652130003358!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>    
+            </section>
+        </main>
         
-        <section>
-            <div class="location">
-                <h2>Podrás encontarnos en la siguiente dirección!</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.973208869203!2d-58.84971948431231!3d-27.470093423297932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456cb9480e4d31%3A0x3df8fe15b59af2df!2sBol%C3%ADvar%20274%2C%20W3400AME%20W3400AME%2C%20Corrientes!5e0!3m2!1ses-419!2sar!4v1651240561524!5m2!1ses-419!2sar" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
-    
-    </main>
-    
-    <footer>
-        <div class="iconosBox">
-            <figure>
-            <a target="_blank" href="https://www.instagram.com/?hl=es-la"><img class="iconosFooter" src="./img/instagram.png" alt=""></a>
-            <a target="_blank" href="https://www.youtube.com/"><img class="iconosFooter" src="./img/youtube.png" alt=""></a>
-            <a target="_blank" href="https://wa.me/543794041557"><img class="iconosFooter" src="./img/whatsapp.png" alt=""></a>
-            </figure>                    
-        </div> 
-</footer>
+        <footer class="footer">
+            <div class="footerIcons">
+                <a target="_blank" href="https://www.instagram.com/?hl=es-la"><img class="iconosFooter" src="./img/instagram.png" alt="enlace a chat de instagram"></a>
+                <a target="_blank" href="https://www.youtube.com/"><img class="iconosFooter" src="./img/youtube.png" alt="enlace a youtube"></a>
+                <a target="_blank" href="https://wa.me/543794041557"><img class="iconosFooter" src="./img/whatsapp.png" alt="enlace a chat de whatsapp"></a>
+            </div> 
+        </footer>
+    </section>
 </body>
 </html>

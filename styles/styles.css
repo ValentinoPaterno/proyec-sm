@@ -1,50 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     padding: 0;  
     margin: 0;
 }
 
-/* Mobile first */
 body{
-    background-color: aliceblue;
+    background-color: rgb(150, 166, 180);
     font-family: 'Source Sans Pro', sans-serif;
-    display: flex;
     flex-direction: column;
     min-height: 100vh;
+    min-width: 100vw;
 }
-
 header{
-    font-size: large;
-    display: grid;
-    justify-content: center;
-    text-transform: uppercase;
+    display: flex;
+    background-color: rgb(245, 245, 245);
+    font-size: 2rem;
+    flex-direction: column;
+}
+.mainLogo{
+    align-self: center;
+    margin: 25px 0px 0px ;
+    padding: 1rem;
+    background-color: white;
+    border: solid black 0;
+    border-radius: 50px;
+}
+.navResponsive{
+    list-style-type: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+.navLiContainer{
+    display: flex;
+    flex-direction: column;
 }
 
-.sectionsText{
-    list-style-type: none;
+.fa-solid{
+    color: rgb(37, 11, 11);
+    font-size: large;
+}
+.sections{
     text-decoration: none;
+    font-weight: none;
+    font-size: large;
     color: black;
 }
 
-.logoContainer{
-    height: 200px;
-    width: 200px;
+.introductionSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.marykay.es/-/media/images/mk/europe/spain/esuite/beauty-consultant/2021-08-como-ser-consultora-01.jpg?h=521&w=1418&la=es-ES&hash=00B71D4268907D2BE2155124C97CD85343BBAC96);
+    background-repeat: no-repeat;
+    height: 450px;
 }
-.logo{
-    max-width: 100%;
-    max-height: 100%;
+.introduction{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    border: solid rgb(0, 0, 0) 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    border-style:none;
+    font-size: 2rem;
 }
 
-.introduction, .salesProposal, .location{
-    border: solid black 2px;
+.mainHeading{
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.slogan{
+    font-size: 1rem;
+}
+
+h2, h3{
+    font-weight: 300;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ourBrandsSection{
+    height: 800px;
+    background-color: rgb(231, 229, 229);
+}
+
+.ourBrands{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase;
+    background-color: rgb(255, 255, 255);
+}
+.imgs{
+    height: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+.brand{
     margin: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.someProductsSection{
+    background-color: rgb(255, 255, 255);
+}
+.someProducts{
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase;
+    background-color: rgb(255, 255, 255);
+}
+.productsImages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(217, 217, 215);
+}
+.products{
+    margin: 20px;
+    width: 400px;
+    height: 800px;
+    box-shadow: 2px 2px 20px #333;
+}
+
+.location{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.mapContainer{
+    display: flex;
+    justify-content: center;
+}
+.map{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 footer{
     text-align: center;
     padding: 20px;
-    background-color: antiquewhite;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 0;
+}
+.footerIcons{
+    display: flex;
+    justify-content: space-around;
+}
+.iconosFooter{
+    width: 35px;
+    height: 35px;
 }
 
+.navbar{
+    grid-area: navbar;
+}
+.main{
+    grid-area: main;
+    margin-top: 0px;
+}
+.footer{
+    grid-area: footer;
+}
 
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "navbar"
+    "main"
+    "footer";
+}
 
+@media (min-width: 768px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .navResponsive{
+        display: flex;
+        margin-top: 0%;
+        height: 117px;
+        align-items: center;
+    }
+    .navLiContainer{
+        flex-direction: row;
+    }
+    .sections{
+        margin: 10px;
+    }
+    .mainLogo{
+        margin-left: 40px;
+        margin-bottom: 30px;
+    }
+}
 
+@media (min-width: 1414px){
+    .introductionSection{
+        background: linear-gradient(90deg, rgb(180, 177, 177), rgb(196, 132, 132))
+    }
+}
+
+/* Productos */
+
+.ourProductsText{
+    background: linear-gradient(90deg, rgb(255, 207, 207), rgb(207, 175, 175),rgb(255, 158, 158));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    text-transform: uppercase;
+}
+.productsText{
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Promociones */
+
+.coming-soon{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+/* Acerca */
+
+/* Contacto */
+
+.contactForm{
+    background-color: rgb(231, 229, 229);
+    padding: 20px
+}
+form{
+    padding: 20px;
+    width: max-content;
+    border: 2px rosybrown solid;
+    border-radius: 10px;
+    background-color: white;
+}
