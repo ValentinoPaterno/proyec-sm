@@ -7,7 +7,7 @@
 
 body{
     background-color: rgb(150, 166, 180);
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto', 'Source Sans Pro', sans-serif;
     flex-direction: column;
     min-height: 100vh;
     min-width: 100vw;
@@ -15,9 +15,11 @@ body{
 header{
     display: flex;
     background-color: rgb(245, 245, 245);
-    font-size: 2rem;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
     flex-direction: column;
 }
+
 .mainLogo{
     align-self: center;
     margin: 25px 0px 0px ;
@@ -42,8 +44,6 @@ header{
 }
 .sections{
     text-decoration: none;
-    font-weight: none;
-    font-size: large;
     color: black;
 }
 
@@ -73,12 +73,13 @@ header{
     font-weight: 400;
     margin-bottom: 10px;
 }
+
 .slogan{
     font-size: 1rem;
 }
 
 h2, h3{
-    font-weight: 300;
+    font-weight: 400;
     font-size: large;
     font-family: 'Roboto', sans-serif;
 }
@@ -107,6 +108,7 @@ h2, h3{
     margin: 10px;
     width: 200px;
     height: 200px;
+    background-color: white;
 }
 
 .someProductsSection{
