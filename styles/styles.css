@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 
 *{
     padding: 0;  
@@ -9,9 +11,9 @@ body{
     background-color: rgb(150, 166, 180);
     font-family: 'Roboto', 'Source Sans Pro', sans-serif;
     flex-direction: column;
-    min-height: 100vh;
-    min-width: 100vw;
+    width: 100%;
 }
+
 header{
     display: flex;
     background-color: rgb(245, 245, 245);
@@ -22,7 +24,7 @@ header{
 
 .mainLogo{
     align-self: center;
-    margin: 25px 0px 0px ;
+    margin: 25px 0px 0px 0px;
     padding: 1rem;
     background-color: white;
     border: solid black 0;
@@ -31,7 +33,7 @@ header{
 .navResponsive{
     list-style-type: none;
     padding: 10px;
-    margin-top: 10px;
+    margin: 10px ;
 }
 .navLiContainer{
     display: flex;
@@ -42,12 +44,16 @@ header{
     color: rgb(37, 11, 11);
     font-size: large;
 }
+.list-nav{
+    margin-bottom: 10px;
+}
 .sections{
     text-decoration: none;
     color: black;
 }
 
 .introductionSection{
+    font-family: 'Playfair Display', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,14 +64,16 @@ header{
 .introduction{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 45px;
     margin: 20px;
     border: solid rgb(0, 0, 0) 3px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50px;
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/45degreee_fabric.png);
+    border-radius: 50%;
     border-style:none;
     font-size: 2rem;
+    color: rgb(0, 0, 0);
 }
+
 
 .mainHeading{
     align-self: center;
@@ -75,7 +83,8 @@ header{
 }
 
 .slogan{
-    font-size: 1rem;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 h2, h3{
@@ -85,7 +94,9 @@ h2, h3{
 }
 
 .ourBrandsSection{
-    height: 800px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
     background-color: rgb(231, 229, 229);
 }
 
@@ -98,12 +109,15 @@ h2, h3{
     background-color: rgb(255, 255, 255);
 }
 .imgs{
-    height: 750px;
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/45degreee_fabric.png);
+    background-attachment: scroll;
+    height: 62.5em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
 }
+
 .brand{
     margin: 10px;
     width: 200px;
@@ -112,6 +126,7 @@ h2, h3{
 }
 
 .someProductsSection{
+    height: auto;
     background-color: rgb(255, 255, 255);
 }
 .someProducts{
@@ -124,16 +139,15 @@ h2, h3{
 .productsImages{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: rgb(217, 217, 215);
 }
 .products{
     margin: 20px;
-    width: 400px;
-    height: 800px;
+    width: auto;
+    height: 600px;
     box-shadow: 2px 2px 20px #333;
 }
-
 .location{
     text-align: center;
     text-transform: uppercase;
@@ -171,10 +185,10 @@ footer{
 }
 .main{
     grid-area: main;
-    margin-top: 0px;
 }
 .footer{
     grid-area: footer;
+    margin-bottom: 0;
 }
 
 .wrapper{
@@ -201,20 +215,34 @@ footer{
     .navLiContainer{
         flex-direction: row;
     }
-    .sections{
-        margin: 10px;
-    }
     .mainLogo{
         margin-left: 40px;
         margin-bottom: 30px;
     }
-}
-
-@media (min-width: 1414px){
-    .introductionSection{
-        background: linear-gradient(90deg, rgb(180, 177, 177), rgb(196, 132, 132))
+    .list-nav{
+        margin-bottom: 0px;
+        margin-right: 15px;
     }
 }
+
+@media (min-width: 1024px){
+    .sections:hover{
+        color: rgb(195, 133, 133);
+    }
+    .brand{
+        transition: all 1s;
+    }
+    .brand:hover{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .introductionSection{
+        background: linear-gradient(90deg, rgb(172, 154, 154), rgb(172, 126, 126),rgb(177, 102, 102)) 
+    }
+
+}
+
 
 /* Productos */
 
@@ -241,6 +269,8 @@ footer{
     display: flex;
     justify-content: center;
 }
+
+
 /* Acerca */
 
 /* Contacto */
