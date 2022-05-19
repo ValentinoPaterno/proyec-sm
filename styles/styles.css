@@ -15,21 +15,11 @@ body{
 }
 
 header{
-    display: flex;
-    background-color: rgb(245, 245, 245);
-    font-size: large;
     font-family: 'Roboto', sans-serif;
     flex-direction: column;
 }
 
-.mainLogo{
-    align-self: center;
-    margin: 25px 0px 0px 0px;
-    padding: 1rem;
-    background-color: white;
-    border: solid black 0;
-    border-radius: 50px;
-}
+
 .navResponsive{
     list-style-type: none;
     padding: 10px;
@@ -180,8 +170,8 @@ footer{
     height: 35px;
 }
 
-.navbar{
-    grid-area: navbar;
+.navbar1{
+    grid-area: navbar1;
 }
 .main{
     grid-area: main;
@@ -196,7 +186,7 @@ footer{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "navbar"
+    "navbar1"
     "main"
     "footer";
 }
