@@ -11,7 +11,6 @@ body{
     background-color: rgb(150, 166, 180);
     font-family: 'Roboto', 'Source Sans Pro', sans-serif;
     flex-direction: column;
-    width: 100%;
 }
 
 header{
@@ -33,6 +32,7 @@ header{
 .fa-solid{
     color: rgb(37, 11, 11);
     font-size: large;
+    margin-right: 10px;
 }
 .list-nav{
     margin-bottom: 10px;
@@ -80,7 +80,7 @@ header{
 h2, h3{
     font-weight: 400;
     font-size: large;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
 }
 
 .ourBrandsSection{
