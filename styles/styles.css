@@ -18,16 +18,10 @@ header{
     flex-direction: column;
 }
 
+.navbar{
+    background-color: white;
+}
 
-.navResponsive{
-    list-style-type: none;
-    padding: 10px;
-    margin: 10px ;
-}
-.navLiContainer{
-    display: flex;
-    flex-direction: column;
-}
 
 .fa-solid{
     color: rgb(37, 11, 11);
@@ -107,6 +101,7 @@ h2, h3{
     justify-content: space-around;
     align-content: center;
 }
+
 
 .brand{
     margin: 10px;
@@ -192,19 +187,6 @@ footer{
 }
 
 @media (min-width: 768px){
-    header{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .navResponsive{
-        display: flex;
-        margin-top: 0%;
-        height: 117px;
-        align-items: center;
-    }
-    .navLiContainer{
-        flex-direction: row;
-    }
     .mainLogo{
         margin-left: 40px;
         margin-bottom: 30px;
@@ -265,14 +247,3 @@ footer{
 
 /* Contacto */
 
-.contactForm{
-    background-color: rgb(231, 229, 229);
-    padding: 20px
-}
-form{
-    padding: 20px;
-    width: max-content;
-    border: 2px rosybrown solid;
-    border-radius: 10px;
-    background-color: white;
-}
