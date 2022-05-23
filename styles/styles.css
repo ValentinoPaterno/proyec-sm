@@ -72,36 +72,36 @@ header{
 }
 
 h2, h3{
-    font-weight: 400;
+    margin-bottom: 0;
+    font-weight: 600;
     font-size: large;
     font-family: 'Playfair Display', sans-serif;
+    letter-spacing: 5px;
 }
 
 .ourBrandsSection{
     display: flex;
     flex-direction: column;
     height: auto;
-    background-color: rgb(231, 229, 229);
 }
 
 .ourBrands{
-    font-size: 25px;
+    padding: 15px;
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 15px;
     text-transform: uppercase;
-    background-color: rgb(255, 255, 255);
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/45degreee_fabric.png);
 }
+
 .imgs{
     background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/45degreee_fabric.png);
     background-attachment: scroll;
-    height: 62.5em;
+    height: 50rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
 }
-
 
 .brand{
     margin: 10px;
@@ -122,14 +122,16 @@ h2, h3{
     background-color: rgb(255, 255, 255);
 }
 .productsImages{
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: rgb(217, 217, 215);
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/45degreee_fabric.png);
 }
+
 .products{
-    margin: 20px;
-    width: auto;
+    margin: 1rem;
+    width: 270px;
     height: 600px;
     box-shadow: 2px 2px 20px #333;
 }
