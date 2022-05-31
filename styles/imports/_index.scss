@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    padding: 0;  
+    margin: 0;
+}
+
+body{
+    background-color: $grey;
+    font-family: $body-font;
+    flex-direction: column;
+}
+
+h2, h3{
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: large;
+    font-family: $h2-h3-fonts;
+    letter-spacing: 5px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "navbar1"
+    "main"
+    "footer";
+}
+
+.navbar1{
+    grid-area: navbar1;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    .navbar{
+        background-color: white;
+    }
+}
+
+.main{
+    grid-area: main;
+}
+
+.introductionSection{
+    font-family: 'Playfair Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.marykay.es/-/media/images/mk/europe/spain/esuite/beauty-consultant/2021-08-como-ser-consultora-01.jpg?h=521&w=1418&la=es-ES&hash=00B71D4268907D2BE2155124C97CD85343BBAC96);
+    background-repeat: no-repeat;
+    height: 450px;
+    .introduction{
+        display: flex;
+        flex-direction: column;
+        padding: 45px;
+        margin: 20px;
+        border: solid rgb(0, 0, 0) 3px;
+        background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/45degreee_fabric.png);
+        border-radius: 50%;
+        border-style:none;
+        font-size: 2rem;
+        color: rgb(0, 0, 0);
+        .mainHeading{
+            align-self: center;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        .slogan{
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}
+
+.ourBrandsSection{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    .ourBrands{
+        padding: 15px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        text-transform: uppercase;
+        background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/45degreee_fabric.png);
+    }
+    .imgs{
+        background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/45degreee_fabric.png);
+        background-attachment: scroll;
+        height: 50rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        .brand{
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: white;
+        }
+    }
+}
+
+.someProductsSection{
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    .someProducts{
+        font-size: 30px;
+        text-align: center;
+        padding: 15px;
+        text-transform: uppercase;
+        background-color: rgb(255, 255, 255);
+    }
+    .productsImages{
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/45degreee_fabric.png);
+        .products{
+            margin: 1rem;
+            width: 270px;
+            height: 600px;
+            box-shadow: 2px 2px 20px #333;
+        }
+    }
+}
+
+.locationSection{
+    .location{
+        text-align: center;
+        text-transform: uppercase;
+        padding: 15px;
+        font-size: 20px;
+        background-color: rgb(255, 255, 255);
+    }
+    .mapContainer{
+        display: flex;
+        justify-content: center;
+        background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/leaves-pattern.png);
+        .map{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.footer{
+    grid-area: footer;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 0;
+    .footerIcons{
+        display: flex;
+        justify-content: space-around;
+        .iconosFooter{
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .mainLogo{
+        margin-left: 40px;
+        margin-bottom: 30px;
+    }
+    .list-nav{
+        margin-bottom: 0px;
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 1024px){
+    .brand{
+        transition: all 1s;
+    }
+    .brand:hover{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .introductionSection{
+        background: linear-gradient(90deg, rgb(172, 154, 154), rgb(172, 126, 126),rgb(177, 102, 102)) 
+    }
+    .map{
+        height: 50vh;
+        width: 60vw;
+        }
+}
