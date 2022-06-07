@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import "../abstracts/variables";
 
 *{
     padding: 0;  
     margin: 0;
+}
+
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
 }
 
 body{
@@ -63,10 +67,10 @@ h2, h3{
         font-size: 2rem;
         color: rgb(0, 0, 0);
         .mainHeading{
-            align-self: center;
-            text-transform: uppercase;
-            font-weight: 400;
-            margin-bottom: 10px;
+            font-weight: map-get($stylesMainHeading, negrita);
+            text-transform: map-get($stylesMainHeading, mayus);
+            text-align: map-get($stylesMainHeading , ubicación);
+            margin-bottom: map-get($stylesMainHeading , bottommargin);
         }
         .slogan{
             font-size: 20px;
@@ -96,8 +100,7 @@ h2, h3{
         align-content: center;
         .brand{
             margin: 10px;
-            width: 200px;
-            height: 200px;
+            @include sizes(200px, 200px);
             background-color: white;
         }
     }
@@ -180,8 +183,7 @@ h2, h3{
         transition: all 1s;
     }
     .brand:hover{
-        width: 300px;
-        height: 300px;
+        @include sizes(300px, 300px);
     }
     
     .introductionSection{
